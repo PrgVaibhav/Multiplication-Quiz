@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(65deg, #e0ec2d 35%, #44e467);
+  font-family: 'Rokkitt', serif;
+}
+
+.heading {
+  position: absolute;
+  top: 10%;
+}
+
+.form {
+  position: relative;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  margin: 0.9rem;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 0.8rem;
+  border: 2px solid black;
+  margin: 0.9rem 0;
+  border-radius: 12px;
+  outline: none;
+  /* position: relative; */
+}
+
+.input::placeholder {
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: blue;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  color: white;
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  outline: none;
+  border: none;
+  transition: all 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  filter: brightness(0.9);
+}
+
+.btn:active {
+  transform: translateY(8px);
+}
+
+.score {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 1.7rem;
+  text-transform: uppercase;
+}
+
+.input-field .warning {
+  color: red;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.warn {
+  border: 2px solid red;
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow: hidden;
+  }
+
+  .form h1 {
+    font-size: 1.4rem;
+  }
+
+  .input {
+    font-size: 1rem;
+  }
+  .btn {
+    padding: 0.5rem;
+  }
+  .input-field .warning {
+    color: red;
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+}
